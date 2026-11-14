@@ -2,8 +2,10 @@
 const temperature = 28; // °C
 const windSpeed = 12;   // km/h
 
-// Wind chill (metric): one-line calculation
-const calculateWindChill = (temp, speed) => 13.12 + 0.6215 * temp - 11.37 * Math.pow(speed, 0.16) + 0.3965 * temp * Math.pow(speed, 0.16);
+// Wind chill (metric, °C and km/h): one-line calculation
+function calculateWindChill(temp, speed) {
+  return 13.12 + 0.6215 * temp - 11.37 * Math.pow(speed, 0.16) + 0.3965 * temp * Math.pow(speed, 0.16);
+}
 
 // Only calculate when conditions are viable: temp <= 10 °C and wind > 4.8 km/h
 let windChill = "N/A";
