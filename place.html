@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pantanal, Brazil | WDD 131</title>
+  <meta name="author" content="Your Name">
+  <meta name="description" content="A page about the Pantanal, the largest tropical wetland on Earth, in Brazil.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/place.css">
+  <script src="scripts/place.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Pantanal, Brazil</h1>
+  </header>
+
+  <main>
+    <picture class="hero">
+      <source media="(min-width: 700px)" srcset="images/pantanal-jaguar-large.webp" width="1280" height="854">
+      <img src="images/pantanal-harpy-small.webp" alt="A harpy eagle with a grey crest looking to the side" width="640" height="672">
+    </picture>
+
+    <section class="data" aria-labelledby="data-title">
+      <h2 id="data-title">Data</h2>
+      <dl>
+        <div><dt>Country:</dt><dd>Brazil</dd></div>
+        <div><dt>States:</dt><dd>MT and MS</dd></div>
+        <div><dt>Area:</dt><dd>150,000 km&sup2;</dd></div>
+        <div><dt>Habitat:</dt><dd>Wetland</dd></div>
+        <div><dt>Famous for:</dt><dd>Jaguars</dd></div>
+        <div><dt>Visit:</dt><dd>May&ndash;Sep</dd></div>
+      </dl>
+    </section>
+
+    <section class="weather" aria-labelledby="weather-title">
+      <h2 id="weather-title">Weather</h2>
+      <img class="weather-icon" src="images/weather-icon.svg" alt="Partly cloudy" width="48" height="48">
+      <dl>
+        <div><dt>Temperature:</dt><dd><span id="temperature">28</span>&nbsp;&deg;C</dd></div>
+        <div><dt>Conditions:</dt><dd>Partly cloudy</dd></div>
+        <div><dt>Wind:</dt><dd><span id="wind">12</span>&nbsp;km/h</dd></div>
+        <div><dt>Wind chill:</dt><dd id="windchill"></dd></div>
+      </dl>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> |Leticia Araujo Moura | Sâo Paulo, Brazil</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,157 @@
+/* Global variables: palette from the Pantanal greens */
+:root {
+  --celadon: #bee6ce;
+  --aqua-light: #bcffdb;
+  --aqua: #8dffcd;
+  --emerald: #68d89b;
+  --shamrock: #4f9d69;
+  --ink: #0f2a1a;
+  --font: "Lato", sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: var(--font);
+  color: var(--ink);
+  background: var(--celadon);
+  line-height: 1.5;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  background: var(--shamrock);
+  border-bottom: 3px solid var(--ink);
+}
+
+h1 {
+  margin: 0;
+  padding: 0.4rem 1.5rem;
+  max-width: 100%;
+  background: var(--aqua-light);
+  border: 2px solid var(--ink);
+  font-size: 1.6rem;
+  font-weight: 900;
+  text-align: center;
+}
+
+/* Main (mobile: stacked) */
+main {
+  display: grid;
+  gap: 1.25rem;
+  padding-bottom: 1.5rem;
+}
+
+.hero,
+.hero img {
+  display: block;
+  width: 100%;
+}
+
+.hero img {
+  height: auto;
+  aspect-ratio: 640 / 520;
+  object-fit: cover;
+  object-position: center 20%;
+}
+
+.data,
+.weather {
+  margin: 0 0.75rem;
+  padding: 0.5rem 1rem 1rem;
+  background: var(--aqua-light);
+  border: 2px solid var(--ink);
+}
+
+h2 {
+  margin: 0.5rem 0;
+  font-size: 1.5rem;
+  font-weight: 900;
+  text-align: center;
+}
+
+dl { margin: 0; }
+
+dl div {
+  display: flex;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 0.1rem 0;
+}
+
+dt {
+  flex: 1;
+  text-align: right;
+  font-weight: 700;
+}
+
+dd {
+  flex: 1;
+  margin: 0;
+}
+
+.weather-icon {
+  display: block;
+  margin: 0 auto 0.5rem;
+}
+
+/* Footer */
+footer {
+  padding: 1rem;
+  background: var(--shamrock);
+  border-top: 3px solid var(--ink);
+  text-align: center;
+}
+footer p { margin: 0.2rem 0; }
+
+/* Wider view: cards sit on top of the hero image */
+@media (min-width: 700px) {
+  h1 { font-size: 2.2rem; }
+
+  main {
+    display: grid;
+    grid-template: 1fr / 1fr;
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .hero,
+  .data,
+  .weather {
+    grid-area: 1 / 1;
+  }
+
+  .hero img {
+    height: 640px;
+    aspect-ratio: auto;
+    object-position: center;
+  }
+
+  .data {
+    align-self: start;
+    justify-self: start;
+    width: 240px;
+    margin: 1.5rem;
+    background: rgb(188 255 219 / 0.92);
+  }
+
+  .weather {
+    align-self: end;
+    justify-self: end;
+    width: 300px;
+    margin: 1.5rem;
+    background: rgb(188 255 219 / 0.92);
+  }
+
+  /* Weather icon: pseudo-element after the heading, replaces the SVG */
+  .weather h2::after {
+    content: " \26C5";
+  }
+
+  .weather-icon { display: none; }
+}
