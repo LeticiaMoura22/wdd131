@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Temple Album | WDD 131</title>
+  <meta name="description" content="A responsive picture album of temples around the world.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/temples.css">
+  <link rel="stylesheet" href="styles/temples-large.css" media="(min-width: 700px)">
+  <script src="scripts/temples.js" defer></script>
+</head>
+<body>
+  <header>
+    <p class="site-title">Temple Album</p>
+    <button id="menu" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">&#9776;</button>
+    <nav id="primary-nav" aria-label="Primary">
+      <a href="#" class="active">Home</a>
+      <a href="#">Old</a>
+      <a href="#">New</a>
+      <a href="#">Large</a>
+      <a href="#">Small</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Home</h1>
+    <section class="gallery">
+      <figure>
+        <img src="images/temples-6.jpeg" alt="Oakland California Temple lit at dusk above the city" width="638" height="480">
+        <figcaption>Oakland California</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temples-7.jpeg" alt="Fort Lauderdale Florida Temple with palm trees and a reflecting pool" width="571" height="350" loading="lazy">
+        <figcaption>Fort Lauderdale Florida</figcaption>
+      </figure>
+      <figure>
+        <img class="top" src="images/temples-8.jpeg" alt="Gilbert Arizona Temple glowing at sunset at the end of a long walkway" width="387" height="516" loading="lazy">
+        <figcaption>Gilbert Arizona</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temples-1.jpeg" alt="Washington D.C. Temple with tall spires and a fountain" width="506" height="395" loading="lazy">
+        <figcaption>Washington D.C.</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temples-2.jpeg" alt="Salt Lake Temple, a granite temple with six spires" width="421" height="475" loading="lazy">
+        <figcaption>Salt Lake City Utah</figcaption>
+      </figure>
+      <figure>
+        <img class="top" src="images/temples-3.jpeg" alt="Panama City Panama Temple surrounded by green hills" width="365" height="547" loading="lazy">
+        <figcaption>Panama City Panama</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temples-4.jpeg" alt="Los Angeles California Temple under a deep blue sky" width="547" height="365" loading="lazy">
+        <figcaption>Los Angeles California</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temples-5.jpeg" alt="Saratoga Springs Utah Temple at the end of a street with mountains behind" width="516" height="387" loading="lazy">
+        <figcaption>Saratoga Springs Utah</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temples-6.jpeg" alt="Oakland California Temple lit at dusk above the city" width="638" height="480" loading="lazy">
+        <figcaption>Oakland California (placeholder)</figcaption>
+      </figure>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> | Leticia Araujo Moura | São Paulo,Brazil</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
