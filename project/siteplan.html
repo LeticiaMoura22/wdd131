@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site plan for Container Garden Guide, a beginner's website on growing vegetables in pots.">
+    <title>Site Plan | Container Garden Guide</title>
+    <link rel="stylesheet" href="styles/siteplan.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="logo" aria-hidden="true">
+            <svg viewBox="0 0 64 64" width="56" height="56" xmlns="http://www.w3.org/2000/svg">
+                <rect x="14" y="36" width="36" height="20" rx="3" fill="#A8502A"/>
+                <path d="M32 36 V20" stroke="#2F5D3A" stroke-width="3" fill="none" stroke-linecap="round"/>
+                <path d="M32 26 C24 26 20 20 20 14 C27 14 32 18 32 26Z" fill="#2F5D3A"/>
+                <path d="M32 22 C38 22 44 18 44 10 C37 10 32 14 32 22Z" fill="#4E8A5E"/>
+            </svg>
+        </div>
+        <h1>Container Garden Guide</h1>
+        <p class="tagline">Site Plan: Project Blueprint</p>
+    </header>
+
+    <main>
+        <section id="site-name" aria-labelledby="site-name-heading">
+            <h2 id="site-name-heading">1. Site Name</h2>
+            <p><strong>Container Garden Guide</strong></p>
+            <p>The name says what the site offers: practical, beginner-friendly help for growing vegetables in pots, on balconies, patios, and windowsills. It is short, easy to remember, and easy to say. Its logo is a small pot with a sprouting plant.</p>
+            <p>Optional domain availability: <code>containergardenguide.org</code></p>
+        </section>
+
+        <section id="site-purpose" aria-labelledby="site-purpose-heading">
+            <h2 id="site-purpose-heading">2. Site Purpose</h2>
+            <p>The site gives people with little outdoor space a clear starting point for container vegetable gardening. It provides:</p>
+            <ul>
+                <li>A short introduction and a get-started checklist.</li>
+                <li>A filterable plant guide listing about 12 vegetables by sun needs, pot size, days to harvest, and planting season.</li>
+                <li>A seasonal planner checklist that saves progress in the browser.</li>
+                <li>A workshop sign-up form and a references page that credits all sources.</li>
+            </ul>
+        </section>
+
+        <section id="scenarios" aria-labelledby="scenarios-heading">
+            <h2 id="scenarios-heading">3. Scenarios</h2>
+            <p>Visitors are renters or new gardeners with a balcony, patio, or sunny windowsill. They ask:</p>
+            <ol>
+                <li>Which vegetables grow well in a pot on a shady balcony?</li>
+                <li>What size pot does a tomato plant need, and how many days until harvest?</li>
+                <li>What should I do this month to keep my container garden on track?</li>
+                <li>How do I sign up for a beginner workshop?</li>
+            </ol>
+        </section>
+
+        <section id="color-schema" aria-labelledby="color-heading">
+            <h2 id="color-heading">4. Color Schema</h2>
+            <p>The palette uses soft, natural tones that suit a gardening theme and keep text readable.</p>
+            <ul class="swatches">
+                <li>
+                    <span class="swatch" style="background-color:#2F5D3A" aria-hidden="true"></span>
+                    <div>
+                        <strong>Leaf Green #2F5D3A</strong>
+                        <p>Headings, header background, and primary buttons. White text on this green has a contrast ratio above 7:1.</p>
+                    </div>
+                </li>
+                <li>
+                    <span class="swatch" style="background-color:#A8502A" aria-hidden="true"></span>
+                    <div>
+                        <strong>Terracotta #A8502A</strong>
+                        <p>Accents, links, and the logo pot. Used for text only on the cream background, where it has a contrast ratio above 4.5:1.</p>
+                    </div>
+                </li>
+                <li>
+                    <span class="swatch" style="background-color:#FBF7EE" aria-hidden="true"></span>
+                    <div>
+                        <strong>Potting Cream #FBF7EE</strong>
+                        <p>Page background and cards.</p>
+                    </div>
+                </li>
+                <li>
+                    <span class="swatch" style="background-color:#1F2A24" aria-hidden="true"></span>
+                    <div>
+                        <strong>Soil Ink #1F2A24</strong>
+                        <p>Body paragraphs. This near-black green has a contrast ratio above 14:1 on the cream background.</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section id="typography" aria-labelledby="typography-heading">
+            <h2 id="typography-heading">5. Typography</h2>
+            <p>Two fonts are used, both from the system font stack so the site loads fast without extra requests.</p>
+            <dl class="font-list">
+                <dt>Headings: Georgia, serif</dt>
+                <dd class="sample-heading">Choose the right pot for your plants</dd>
+                <dt>Body and navigation: Verdana, Geneva, sans-serif</dt>
+                <dd class="sample-body">Most vegetables need at least six hours of sun a day. Check the label on each plant before you buy it.</dd>
+            </dl>
+        </section>
+
+        <section id="wireframes" aria-labelledby="wireframes-heading">
+            <h2 id="wireframes-heading">6. Wireframes: Home Page</h2>
+            <p>Simple layout sketches of the home page. Boxes show content areas only.</p>
+
+            <div class="wireframes">
+                <figure class="wire-mobile">
+                    <figcaption>Mobile (portrait)</figcaption>
+                    <div class="wire-screen">
+                        <div class="wire-block wire-header">Logo + menu</div>
+                        <div class="wire-block wire-hero">Hero image</div>
+                        <div class="wire-block wire-text">Intro text</div>
+                        <div class="wire-block wire-card">Get-started card</div>
+                        <div class="wire-block wire-card">Plant guide card</div>
+                        <div class="wire-block wire-card">Planner card</div>
+                        <div class="wire-block wire-footer">Footer + references link</div>
+                    </div>
+                </figure>
+
+                <figure class="wire-desktop">
+                    <figcaption>Desktop (wide)</figcaption>
+                    <div class="wire-screen">
+                        <div class="wire-block wire-header">Logo + navigation links</div>
+                        <div class="wire-split">
+                            <div class="wire-block wire-hero">Hero image</div>
+                            <div class="wire-block wire-text">Intro text and call to action</div>
+                        </div>
+                        <div class="wire-row">
+                            <div class="wire-block wire-card">Get-started card</div>
+                            <div class="wire-block wire-card">Plant guide card</div>
+                            <div class="wire-block wire-card">Planner card</div>
+                        </div>
+                        <div class="wire-block wire-footer">Footer + references link</div>
+                    </div>
+                </figure>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>Site plan for WDD 131. This plan is a living document and will change as the project develops.</p>
+    </footer>
+</body>
+</html>
