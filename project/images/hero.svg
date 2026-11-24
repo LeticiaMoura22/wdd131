@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-labelledby="t">
+  <title id="t">Illustration of vegetables growing in pots on a sunny balcony</title>
+  <rect width="800" height="450" fill="#FBF7EE"/>
+  <circle cx="680" cy="90" r="46" fill="#F2C75C"/>
+  <rect x="0" y="360" width="800" height="90" fill="#D9CDB4"/>
+  <g>
+    <rect x="90" y="250" width="150" height="120" rx="8" fill="#A8502A"/>
+    <path d="M165 250 V170" stroke="#2F5D3A" stroke-width="5"/>
+    <path d="M165 200 C140 200 125 180 125 150 C150 150 165 170 165 200Z" fill="#2F5D3A"/>
+    <path d="M165 185 C190 185 205 165 205 135 C180 135 165 155 165 185Z" fill="#4E8A5E"/>
+  </g>
+  <g>
+    <rect x="300" y="260" width="150" height="110" rx="8" fill="#A8502A"/>
+    <path d="M375 260 V150" stroke="#2F5D3A" stroke-width="5"/>
+    <circle cx="350" cy="190" r="16" fill="#C0392B"/>
+    <circle cx="400" cy="170" r="16" fill="#C0392B"/>
+    <path d="M375 215 C350 215 340 200 340 180 C360 180 375 195 375 215Z" fill="#2F5D3A"/>
+  </g>
+  <g>
+    <rect x="510" y="270" width="160" height="100" rx="8" fill="#A8502A"/>
+    <path d="M590 270 V200" stroke="#2F5D3A" stroke-width="5"/>
+    <ellipse cx="560" cy="215" rx="30" ry="18" fill="#4E8A5E"/>
+    <ellipse cx="620" cy="215" rx="30" ry="18" fill="#2F5D3A"/>
+  </g>
+</svg>
