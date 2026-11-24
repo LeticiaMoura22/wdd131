@@ -55,21 +55,21 @@ const temples = [
     location: "São Paulo, Brazil",
     dedicated: "1978, October, 30",
     area: 59000,
-    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/sao-paulo-brazil/400x250/sao-paulo-brazil-temple-1346636-wallpaper.jpg"
+    imageUrl: "images/sao-paulo-brazil-temple.jpg"
   },
   {
     templeName: "Tokyo Japan",
     location: "Tokyo, Japan",
     dedicated: "1980, October, 27",
     area: 17000,
-    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/tokyo-japan/400x250/tokyo-japan-temple-1233444-wallpaper.jpg"
+    imageUrl: "images/tokyo-japan-temple.jpg"
   },
   {
     templeName: "Rome Italy",
     location: "Rome, Italy",
     dedicated: "2019, March, 10",
     area: 41000,
-    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/rome-italy/400x250/rome-italy-temple-1866836-wallpaper.jpg"
+    imageUrl: "images/rome-italy-temple.jpg"
   }
 ];
 
