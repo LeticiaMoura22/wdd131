@@ -90,6 +90,22 @@ code {
     border: 1px solid var(--soil-ink);
 }
 
+.swatch-leaf {
+    background-color: var(--leaf-green);
+}
+
+.swatch-terracotta {
+    background-color: var(--terracotta);
+}
+
+.swatch-cream {
+    background-color: var(--cream);
+}
+
+.swatch-ink {
+    background-color: var(--soil-ink);
+}
+
 .swatches p {
     margin: 0.25rem 0 0;
 }
