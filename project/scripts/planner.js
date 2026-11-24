@@ -132,15 +132,25 @@ function showFieldErrors(errors) {
     });
 }
 
+// Escape user-typed text before placing it in HTML.
+function escapeHtml(text) {
+    return text
+        .replaceAll('&', '&amp;')
+        .replaceAll('<', '&lt;')
+        .replaceAll('>', '&gt;')
+        .replaceAll('"', '&quot;')
+        .replaceAll("'", '&#39;');
+}
+
 function confirmationTemplate(signup) {
     const experienceText = signup.experience === 'new'
         ? 'We will start with the basics and walk you through every step.'
         : 'Bring your questions. We will go a little deeper.';
 
     return `
-        <p>Thank you, ${signup.name}! You are signed up for the ${signup.session} session.</p>
+        <p>Thank you, ${escapeHtml(signup.name)}! You are signed up for the ${escapeHtml(signup.session)} session.</p>
         <p>${experienceText}</p>
-        <p>We will send confirmation to ${signup.email}.</p>
+        <p>We will send confirmation to ${escapeHtml(signup.email)}.</p>
     `;
 }
 

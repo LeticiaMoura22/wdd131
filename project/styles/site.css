@@ -354,8 +354,7 @@ main {
         display: none;
     }
 
-    .site-nav ul,
-    .site-nav.is-open ul {
+    .site-nav ul {
         display: flex;
         gap: 1.25rem;
         margin: 0;
