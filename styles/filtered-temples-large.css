@@ -1,0 +1,28 @@
+/* Larger view */
+@media (min-width: 700px) {
+  #menu { display: none; }
+
+  /* Keep the inline nav even if the mobile menu was left open */
+  header,
+  header.open {
+    align-items: center;
+  }
+  header.open .site-title { display: block; }
+
+  nav,
+  header.open nav {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    padding: 0;
+  }
+
+  nav a {
+    padding: 0.5rem 0.9rem;
+    font-size: 1.15rem;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
