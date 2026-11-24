@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 150" role="img" aria-label="Small pots with leafy vegetables">
+  <rect width="240" height="150" fill="#FFFFFF"/>
+  <rect x="20" y="95" width="60" height="45" rx="5" fill="#A8502A"/>
+  <path d="M50 95 V65" stroke="#2F5D3A" stroke-width="3"/>
+  <ellipse cx="38" cy="70" rx="14" ry="9" fill="#4E8A5E"/>
+  <ellipse cx="62" cy="68" rx="14" ry="9" fill="#2F5D3A"/>
+  <rect x="100" y="95" width="60" height="45" rx="5" fill="#A8502A"/>
+  <path d="M130 95 V60" stroke="#2F5D3A" stroke-width="3"/>
+  <circle cx="118" cy="72" r="9" fill="#C0392B"/>
+  <circle cx="142" cy="70" r="9" fill="#C0392B"/>
+  <rect x="180" y="95" width="50" height="45" rx="5" fill="#A8502A"/>
+  <path d="M205 95 V70" stroke="#2F5D3A" stroke-width="3"/>
+  <path d="M205 80 C192 80 186 72 186 62 C198 62 205 70 205 80Z" fill="#2F5D3A"/>
+  <path d="M205 74 C216 74 222 66 222 56 C211 56 205 64 205 74Z" fill="#4E8A5E"/>
+</svg>

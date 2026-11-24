@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="t">
+  <title id="t">Container Garden Guide logo</title>
+  <rect x="14" y="36" width="36" height="20" rx="3" fill="#A8502A"/>
+  <path d="M32 36 V20" stroke="#2F5D3A" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M32 26 C24 26 20 20 20 14 C27 14 32 18 32 26Z" fill="#2F5D3A"/>
+  <path d="M32 22 C38 22 44 18 44 10 C37 10 32 14 32 22Z" fill="#4E8A5E"/>
+</svg>

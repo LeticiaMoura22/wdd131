@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Filter container vegetables by sun level and season, and compare pot size and days to harvest.">
+    <title>Plant Guide | Container Garden Guide</title>
+    <link rel="stylesheet" href="styles/site.css">
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/plants.js" defer></script>
+</head>
+<body>
+    <a class="skip-link" href="#content">Skip to main content</a>
+
+    <header class="site-header">
+        <a class="brand" href="index.html">
+            <img src="images/pot-logo.svg" alt="" width="44" height="44">
+            Container Garden Guide
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+        <nav class="site-nav" id="site-nav" aria-label="Main">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="plants.html" aria-current="page">Plant Guide</a></li>
+                <li><a href="planner.html">Planner and Sign-up</a></li>
+                <li><a href="references.html">References</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="content">
+        <h1>Plant Guide</h1>
+        <p class="intro">Choose your light level and planting season to see which vegetables suit your space. Use the sort menu to find the quickest harvests.</p>
+
+        <form class="filters" id="filter-form" aria-label="Filter plants">
+            <div>
+                <label for="sun-filter">Sun level</label>
+                <select id="sun-filter" name="sun">
+                    <option value="all">All sun levels</option>
+                    <option value="full">Full sun (6+ hours)</option>
+                    <option value="partial">Partial sun (3 to 6 hours)</option>
+                    <option value="shade">Shade (under 3 hours)</option>
+                </select>
+            </div>
+            <div>
+                <label for="season-filter">Planting season</label>
+                <select id="season-filter" name="season">
+                    <option value="all">All seasons</option>
+                    <option value="spring">Spring</option>
+                    <option value="summer">Summer</option>
+                    <option value="fall">Fall</option>
+                </select>
+            </div>
+            <div>
+                <label for="sort-filter">Sort by</label>
+                <select id="sort-filter" name="sort">
+                    <option value="name">Name (A to Z)</option>
+                    <option value="days">Days to harvest (fastest first)</option>
+                </select>
+            </div>
+        </form>
+
+        <p class="result-count" id="result-count" aria-live="polite"></p>
+        <ul id="plant-list" class="card-grid"></ul>
+        <p id="empty-message" class="empty-message" hidden>No plants match these choices. Try a different sun level or season.</p>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; Container Garden Guide. Images and text are credited on the <a href="references.html">References page</a>.</p>
+    </footer>
+</body>
+</html>

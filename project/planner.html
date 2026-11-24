@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A seasonal checklist for container gardeners and a workshop sign-up form.">
+    <title>Planner and Sign-up | Container Garden Guide</title>
+    <link rel="stylesheet" href="styles/site.css">
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/planner.js" defer></script>
+</head>
+<body>
+    <a class="skip-link" href="#content">Skip to main content</a>
+
+    <header class="site-header">
+        <a class="brand" href="index.html">
+            <img src="images/pot-logo.svg" alt="" width="44" height="44">
+            Container Garden Guide
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+        <nav class="site-nav" id="site-nav" aria-label="Main">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="plants.html">Plant Guide</a></li>
+                <li><a href="planner.html" aria-current="page">Planner and Sign-up</a></li>
+                <li><a href="references.html">References</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="content">
+        <h1>Seasonal Planner</h1>
+        <p class="intro">Tick off each task as you finish it. Your checklist is saved in this browser, so it is still here when you come back.</p>
+
+        <section aria-labelledby="checklist-heading">
+            <h2 id="checklist-heading">This season's checklist</h2>
+            <p class="progress" id="progress" aria-live="polite"></p>
+            <ul class="checklist" id="task-list"></ul>
+            <p id="all-done" class="form-status" hidden>All tasks are done. Your container garden is ready for the season!</p>
+        </section>
+
+        <section id="signup" aria-labelledby="signup-heading">
+            <h2 id="signup-heading">Beginner workshop sign-up</h2>
+            <p>The workshop is free. Bring a pot and we will provide potting mix and seedlings.</p>
+
+            <form class="form-panel" id="signup-form" novalidate>
+                <div class="form-field">
+                    <label for="name">Full name</label>
+                    <input type="text" id="name" name="name" autocomplete="name" required>
+                    <p class="error-text" id="name-error" hidden></p>
+                </div>
+
+                <div class="form-field">
+                    <label for="email">Email address</label>
+                    <input type="email" id="email" name="email" autocomplete="email" required>
+                    <p class="error-text" id="email-error" hidden></p>
+                </div>
+
+                <div class="form-field">
+                    <label for="experience">Gardening experience</label>
+                    <select id="experience" name="experience" required>
+                        <option value="">Choose one</option>
+                        <option value="new">I am new to gardening</option>
+                        <option value="some">I have grown a few plants</option>
+                        <option value="experienced">I garden regularly</option>
+                    </select>
+                    <p class="error-text" id="experience-error" hidden></p>
+                </div>
+
+                <fieldset class="form-field">
+                    <legend>Preferred session</legend>
+                    <label><input type="radio" name="session" value="Saturday morning" required> Saturday morning</label>
+                    <label><input type="radio" name="session" value="Weekday evening"> Weekday evening</label>
+                    <p class="error-text" id="session-error" hidden></p>
+                </fieldset>
+
+                <div class="form-field">
+                    <label for="notes">Questions or balcony details (optional)</label>
+                    <textarea id="notes" name="notes" rows="4"></textarea>
+                </div>
+
+                <button class="button-primary" type="submit">Sign up</button>
+            </form>
+
+            <p class="form-status" id="form-status" role="status" hidden></p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; Container Garden Guide. Images and text are credited on the <a href="references.html">References page</a>.</p>
+    </footer>
+</body>
+</html>
